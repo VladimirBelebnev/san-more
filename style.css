@@ -121,7 +121,7 @@ legend {
 
 .plug-logo {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 35%;
     filter: drop-shadow(5px 6px 10px white);
     max-width: 30%;
@@ -186,7 +186,7 @@ legend {
     display: flex;
     gap: 15px;
     position: absolute;
-    bottom: 12%;
+    bottom: 9%;
     z-index: 3;
 }
 
@@ -204,8 +204,7 @@ legend {
 
 .plug-lang {
     position: absolute;
-    bottom: 5%;
-    /* right: 5%; */
+    bottom: 3%;
     display: flex;
     gap: 10px;
     z-index: 3;
@@ -259,24 +258,34 @@ legend {
         max-width: 90%;
     }
     .plug-logo {
-        left: 15%;
+        top: 3%;
+        left: 10%;
         max-width: 70%;
     }
     .plug-timer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 30px;
+        margin-top: 20px;
         gap: 15px;
+        margin-bottom: 50px;
+    }
+    .plug-subtitle {
+        margin-top: 10px;
     }
     .timer-item {
+        gap: 5px;
         margin: 0 auto;
-        width: 132px;
-        height: 132px;
+        width: 112px;
+        height: 112px;
     }
     .timer-num {
         font-size: 2em;
     }
     .plug-title {
-        font-size: 2.2em;
+        max-width: 90%;
+        font-size: 1.8em;
+    }
+    .plug-subtitle, .plug-link, .timer-subtitle {
+        font-size: .8em;
     }
 }

@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+.plug {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background: url('./img/bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plug::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+.plug-block {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.plug-logo {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    filter: drop-shadow(5px 6px 10px white);
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.plug-title {
+    filter: drop-shadow(3px 4px 10px black);
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.plug-subtitle {
+    filter: drop-shadow(3px 4px 10px black);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+    max-width: 50%;
+}
+
+.plug-timer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer-item {
+    filter: drop-shadow(3px 4px 10px black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(0,0,0,.3);
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.timer-num {
+    line-height: 100%;
+    font-size: 3em;
+    font-weight: 200;
+}
+.timer-subtitle {
+    line-height: 100%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.plug-contact {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 12%;
+    z-index: 3;
+}
+
+.plug-link {
+    filter: drop-shadow(2px 4px 1px black);
+    color: #fff;
+    font-size: 1em;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.plug-link:hover {
+    opacity: .8;
+}
+
+.plug-lang {
+    position: absolute;
+    bottom: 5%;
+    /* right: 5%; */
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.plug-lang a {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.plug-lang a:hover {
+    opacity: .8;
+}
+
+@media(max-width:1240px) {
+    .plug-logo {
+        left: 25%;
+        max-width: 50%;
+    }
+    .plug-title {
+        font-size: 3em;
+    }
+}
+
+@media(max-width:1240px) {
+    .plug-logo {
+        left: 25%;
+        max-width: 50%;
+    }
+    .plug-subtitle, .plug-link {
+        font-size: 1em;
+    }
+    .plug-timer {
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .timer-item {
+        width: 100px;
+        height: 100px;
+    }
+    .timer-num {
+        font-size: 2em;
+    }
+    .plug-title {
+        font-size: 2.5em;
+    }
+}
+
+@media(max-width:600px) {
+    .plug-subtitle {
+        max-width: 90%;
+    }
+    .plug-logo {
+        left: 15%;
+        max-width: 70%;
+    }
+    .plug-timer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        gap: 15px;
+    }
+    .timer-item {
+        margin: 0 auto;
+        width: 132px;
+        height: 132px;
+    }
+    .timer-num {
+        font-size: 2em;
+    }
+    .plug-title {
+        font-size: 2.2em;
+    }
+}

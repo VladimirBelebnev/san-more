@@ -259,16 +259,15 @@ legend {
         max-width: 90%;
     }
     .plug-logo {
-        top: 3%;
-        left: 10%;
+        left: 12.5%;
         max-width: 70%;
     }
     .plug-timer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 20px;
+        margin-top: 25px;
         gap: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .plug-subtitle {
         margin-top: 10px;
@@ -283,6 +282,7 @@ legend {
         font-size: 2em;
     }
     .plug-title {
+        margin: 0 auto;
         max-width: 90%;
         font-size: 1.8em;
     }

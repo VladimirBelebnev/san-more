@@ -121,7 +121,7 @@ legend {
 
 .plug-logo {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 35%;
     filter: drop-shadow(5px 6px 10px white);
     max-width: 30%;
@@ -231,6 +231,7 @@ legend {
 
 @media(max-width:1240px) {
     .plug-logo {
+        top: 5%;
         left: 25%;
         max-width: 50%;
     }
